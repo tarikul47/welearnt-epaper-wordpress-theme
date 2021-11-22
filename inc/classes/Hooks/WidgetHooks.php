@@ -6,9 +6,9 @@
  */
 
 
-namespace BootstrapBasic4\Hooks;
+namespace BootstrapBasic5\Hooks;
 
-if (!class_exists('\\BootstrapBasic4\\Hooks\\WidgetHooks')) {
+if (!class_exists('\\BootstrapBasic5\\Hooks\\WidgetHooks')) {
     /**
      * This class will hook into WordPress original widgets such as calendar widget.
      */
@@ -21,7 +21,7 @@ if (!class_exists('\\BootstrapBasic4\\Hooks\\WidgetHooks')) {
          * 
          * To use, just code as follows:
          * 
-         * $WidgetHooks = new \BootstrapBasic4\Hooks\WidgetHooks();
+         * $WidgetHooks = new \BootstrapBasic5\Hooks\WidgetHooks();
          * $WidgetHooks->addActionsFilters();
          * 
          * That's it.

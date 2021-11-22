@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Bootstrap Basic 4 main functional file.
  *
@@ -6,22 +7,22 @@
  */
 
 
-namespace BootstrapBasic4;
+namespace BootstrapBasic5;
 
-if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
+if (!class_exists('\\BootstrapBasic5\\BootstrapBasic5')) {
     /**
      * Bootstrap Basic 4 main functional in class style.
      *
      * This class will be handle all the main hooks that work with theme features such as add theme support features, register widgets area or sidebar, enqueue scripts and styles.<br>
-     * If you want to hook into WordPress and make changes or modification, please use \BootstrapBasic4\Hooks\Bsb4Hooks() class.<br>
+     * If you want to hook into WordPress and make changes or modification, please use \BootstrapBasic5\Hooks\Bsb4Hooks() class.<br>
      * To use, just code as follows:
      *
-     * $BootstrapBasic4 = new \BootstrapBasic4\BootstrapBasic4();
-     * $BootstrapBasic4->addActionsFilters();
+     * $BootstrapBasic5 = new \BootstrapBasic5\BootstrapBasic5();
+     * $BootstrapBasic5->addActionsFilters();
      *
      * That's it.
      */
-    class BootstrapBasic4
+    class BootstrapBasic5
     {
 
 
@@ -44,7 +45,7 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
             add_action('admin_init', array($this, 'addEditorStyles'));
             // Add Bootstrap styles into Gutenberg editor.
             add_action('enqueue_block_editor_assets', array($this, 'enqueueBlockEditorAssets'));
-        }// addActionsFilters
+        } // addActionsFilters
 
 
         /**
@@ -53,7 +54,7 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
         public function addEditorStyles()
         {
             add_editor_style('assets/css/bootstrap.min.css');
-        }// addEditorStyles
+        } // addEditorStyles
 
 
         /**
@@ -61,7 +62,7 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
          */
         public function detectContentWidth()
         {
-            global $content_width, $bootstrapbasic4_sidebar_left_size, $bootstrapbasic4_sidebar_right_size;
+            global $content_width, $BootstrapBasic5_sidebar_left_size, $BootstrapBasic5_sidebar_right_size;
 
             if (is_active_sidebar('sidebar-left') && is_active_sidebar('sidebar-right')) {
                 $content_width = 540;
@@ -69,8 +70,8 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
                 $content_width = 825;
             }
 
-            $content_width = apply_filters('bootstrap_basic4_content_width', $content_width, $bootstrapbasic4_sidebar_left_size, $bootstrapbasic4_sidebar_right_size);
-        }// detectContentWidth
+            $content_width = apply_filters('bootstrap_basic4_content_width', $content_width, $BootstrapBasic5_sidebar_left_size, $BootstrapBasic5_sidebar_right_size);
+        } // detectContentWidth
 
 
         /**
@@ -78,11 +79,11 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
          */
         public function enqueueBlockEditorAssets()
         {
-            if (!wp_script_is('bootstrap4', 'registered')) {
+            if (!wp_script_is('bootstrap5', 'registered')) {
                 $this->registerCommonScriptsAndStyles();
             }
-            wp_enqueue_style('bootstrap4');
-        }// enqueueBlockEditorAssets
+            wp_enqueue_style('bootstrap5');
+        } // enqueueBlockEditorAssets
 
 
         /**
@@ -94,7 +95,7 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
         {
             wp_enqueue_style('welearntStart-wp-main', get_stylesheet_uri(), array(), '1.2.7');
 
-            wp_enqueue_style('bootstrap4');
+            wp_enqueue_style('bootstrap5');
             // font awesome. choose css fonts instead of svg, see more at https://fontawesome.com/how-to-use/on-the-web/other-topics/performance
             wp_enqueue_style('welearntStart-font-awesome5', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css', array(), '5.15.4');
             wp_enqueue_style('welearntStart-main', get_template_directory_uri() . '/assets/css/main.css', array(), '1.2.7');
@@ -102,9 +103,9 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
             if (is_singular() && get_option('thread_comments')) {
                 wp_enqueue_script('comment-reply');
             }
-            wp_enqueue_script('bootstrap4-bundle', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '4.6.0', true);// bundled with popper. see https://getbootstrap.com/docs/4.0/getting-started/contents/#comparison-of-css-files
+            wp_enqueue_script('bootstrap5-bundle', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '5.1', true); // bundled with popper. see https://getbootstrap.com/docs/4.0/getting-started/contents/#comparison-of-css-files
             wp_enqueue_script('welearntStart-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.2.7', true);
-        }// enqueueScriptsAndStyles
+        } // enqueueScriptsAndStyles
 
 
         /**
@@ -112,8 +113,8 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
          */
         public function registerCommonScriptsAndStyles()
         {
-            wp_register_style('bootstrap4', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.6.0');
-        }// registerCommonScriptsAndStyles
+            wp_register_style('bootstrap5', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.6.0');
+        } // registerCommonScriptsAndStyles
 
 
         /**
@@ -176,7 +177,7 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
                 'before_title'  => '<h1 class="widget-title">',
                 'after_title'   => '</h1>',
             ));
-        }// registerSidebars
+        } // registerSidebars
 
 
         /**
@@ -240,7 +241,15 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
             // support responsive embeds for front-end ( https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#responsive-embedded-content )
             add_theme_support('responsive-embeds');
             // end make gutenberg support. ---------------------------------------------------------------------------------
-        }// themeSetup
+            /** custom log **/
+            add_theme_support('custom-logo', array(
+                'height'      => '100%',
+                'width'       => 'auto',
+                'flex-height' => true,
+                'flex-width'  => true,
+                'header-text' => array('site-title', 'site-description'),
+            ));
+        } // themeSetup
 
 
     }

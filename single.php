@@ -11,10 +11,10 @@
 get_header();
 get_sidebar();
 ?> 
-                <main id="main" class="col-md-<?php echo \BootstrapBasic4\Bootstrap4Utilities::getMainColumnSize(); ?> site-main" role="main">
+                <main id="main" class="col-md-<?php echo \BootstrapBasic5\Bootstrap4Utilities::getMainColumnSize(); ?> site-main" role="main">
                     <?php
                     if (have_posts()) {
-                        $Bsb4Design = new \BootstrapBasic4\Bsb4Design();
+                        $Bsb4Design = new \BootstrapBasic5\Bsb4Design();
                         while (have_posts()) {
                             the_post();
                             get_template_part('template-parts/content', get_post_format());

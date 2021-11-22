@@ -5,10 +5,10 @@
  * @package welearntStart
  */
 
-namespace BootstrapBasic4;
+namespace BootstrapBasic5;
 
-if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4WalkerNavMenu')) {
-    class BootstrapBasic4WalkerNavMenu extends \Walker_Nav_Menu
+if (!class_exists('\\BootstrapBasic5\\BootstrapBasic5WalkerNavMenu')) {
+    class BootstrapBasic5WalkerNavMenu extends \Walker_Nav_Menu
     {
 
 

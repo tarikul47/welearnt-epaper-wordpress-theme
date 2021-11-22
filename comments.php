@@ -10,7 +10,7 @@ if (post_password_required()) {
 	return;
 }
 
-$Bsb4Design = new \BootstrapBasic4\Bsb4Design();
+$Bsb4Design = new \BootstrapBasic5\Bsb4Design();
 ?> 
 <section id="comments" class="comments-area">
     <?php if (have_comments()) { ?> 

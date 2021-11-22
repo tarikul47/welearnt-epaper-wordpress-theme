@@ -6,9 +6,9 @@
  */
 
 
-namespace BootstrapBasic4;
+namespace BootstrapBasic5;
 
-if (!class_exists('\\BootstrapBasic4\\Bsb4Design')) {
+if (!class_exists('\\BootstrapBasic5\\Bsb4Design')) {
     /**
      * This class works on template tags or design functions. Such as link to categories or tags from the post page, post on date/time, post by ..., comment fields, and more.
      */

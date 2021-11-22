@@ -6,9 +6,9 @@
  */
 
 
-namespace BootstrapBasic4\Controller;
+namespace BootstrapBasic5\Controller;
 
-if (!class_exists('\\BootstrapBasic4\\Controller\\ThemeHelp')) {
+if (!class_exists('\\BootstrapBasic5\\Controller\\ThemeHelp')) {
     /**
      * This class will act as controller to display theme help page.
      */
@@ -21,7 +21,7 @@ if (!class_exists('\\BootstrapBasic4\\Controller\\ThemeHelp')) {
          * 
          * To use, just code as follows:
          * 
-         * $ThemeHelp = new \BootstrapBasic4\Controller\ThemeHelp();
+         * $ThemeHelp = new \BootstrapBasic5\Controller\ThemeHelp();
          * $ThemeHelp->addActionsFilters();
          * 
          * That's it.

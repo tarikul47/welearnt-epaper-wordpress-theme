@@ -6,12 +6,12 @@
  */
 
 
-namespace BootstrapBasic4\Hooks;
+namespace BootstrapBasic5\Hooks;
 
-if (!class_exists('\\BootstrapBasic4\\Hooks\\Bsb4Hooks')) {
+if (!class_exists('\\BootstrapBasic5\\Hooks\\Bsb4Hooks')) {
     /**
      * This class will be hook into WordPress and make changes to the theme.<br>
-     * If you want to hook to enable or add feature to the theme, please use \BootstrapBasic4\BootstrapBasic4() class.
+     * If you want to hook to enable or add feature to the theme, please use \BootstrapBasic5\BootstrapBasic5() class.
      */
     class Bsb4Hooks
     {
@@ -22,7 +22,7 @@ if (!class_exists('\\BootstrapBasic4\\Hooks\\Bsb4Hooks')) {
          * 
          * To use, just code as follows:
          * 
-         * $Bsb4Hooks = new \BootstrapBasic4\Hooks\Bsb4Hooks();
+         * $Bsb4Hooks = new \BootstrapBasic5\Hooks\Bsb4Hooks();
          * $Bsb4Hooks->addActionsFilters();
          * 
          * That's it.
@@ -137,14 +137,14 @@ if (!class_exists('\\BootstrapBasic4\\Hooks\\Bsb4Hooks')) {
          * Modify title separator.
          * 
          * @access private Do not access this method directly. This is for hook callback not for direct call.
-         * @global string $bootstrapbasic4_title_separator
+         * @global string $BootstrapBasic5_title_separator
          * @return string Return the new title separator.
          */
         public function modifyTitleSeparator()
         {
-            global $bootstrapbasic4_title_separator;
+            global $BootstrapBasic5_title_separator;
 
-            return $bootstrapbasic4_title_separator;
+            return $BootstrapBasic5_title_separator;
         }// modifyTitleSeparator
 
 

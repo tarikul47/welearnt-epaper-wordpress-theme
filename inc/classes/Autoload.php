@@ -1,7 +1,7 @@
 <?php
-namespace BootstrapBasic4;
+namespace BootstrapBasic5;
 
-if (!class_exists('\\BootstrapBasic4\\Autoload')) {
+if (!class_exists('\\BootstrapBasic5\\Autoload')) {
     /**
      * An example of a general-purpose implementation that includes the optional
      * functionality of allowing multiple base directories for a single namespace

@@ -7,12 +7,12 @@
  */
 
 
-$Bsb4Design = new \BootstrapBasic4\Bsb4Design();
+$Bsb4Design = new \BootstrapBasic5\Bsb4Design();
 ?> 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <h1 class="entry-title">
-            <a href="<?php echo esc_url(\BootstrapBasic4\Bsb4Utilities::getLinkInContent()); ?>"><?php the_title(); ?></a>
+            <a href="<?php echo esc_url(\BootstrapBasic5\Bsb4Utilities::getLinkInContent()); ?>"><?php the_title(); ?></a>
         </h1>
 
         <div class="entry-meta">

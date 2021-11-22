@@ -118,31 +118,31 @@ msgstr ""
 msgid "Toggle navigation"
 msgstr ""
 
-#: inc/classes/BootstrapBasic4.php:127
+#: inc/classes/BootstrapBasic5.php:127
 msgid "Sidebar left"
 msgstr ""
 
-#: inc/classes/BootstrapBasic4.php:136
+#: inc/classes/BootstrapBasic5.php:136
 msgid "Sidebar right"
 msgstr ""
 
-#: inc/classes/BootstrapBasic4.php:145
+#: inc/classes/BootstrapBasic5.php:145
 msgid "Header right"
 msgstr ""
 
-#: inc/classes/BootstrapBasic4.php:154
+#: inc/classes/BootstrapBasic5.php:154
 msgid "Navigation bar right"
 msgstr ""
 
-#: inc/classes/BootstrapBasic4.php:163
+#: inc/classes/BootstrapBasic5.php:163
 msgid "Footer left"
 msgstr ""
 
-#: inc/classes/BootstrapBasic4.php:172
+#: inc/classes/BootstrapBasic5.php:172
 msgid "Footer right"
 msgstr ""
 
-#: inc/classes/BootstrapBasic4.php:204
+#: inc/classes/BootstrapBasic5.php:204
 msgid "Primary Menu"
 msgstr ""
 
